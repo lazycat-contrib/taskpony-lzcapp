@@ -1,0 +1,20 @@
+# Taskpony Build Configuration
+# Configuration for building the LPK package
+
+# manifest: 指定 lpk 包的 manifest.yml 文件路径
+manifest: ./lzc-manifest.yml
+
+# pkgout: lpk 包的输出路径
+pkgout: ./
+
+# icon: 指定 lpk 包 icon 的路径（必须是 PNG 格式）
+# ⚠️ 用户需要提供 512x512 PNG 图标文件
+icon: ./icon.png
+
+# contentdir: 可选，额外内容目录（如果需要包含静态文件等）
+# contentdir: ./dist
+
+# compose_override - 覆盖不支持的 Docker Compose 参数
+# Taskpony 不需要额外的 compose 覆盖配置
+compose_override:
+  services: {}
