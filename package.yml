@@ -1,12 +1,11 @@
 package: cloud.lazycat.app.taskpony
-version: 0.2.0
+version: 0.6.0
 name: Taskpony
 description: "A small and tidy task organiser"
 min_os_version: 1.5.0
 license: MIT
 homepage: https://github.com/digdilem/taskpony
 author: digdilem
-
 locales:
   en:
     name: "Taskpony"
