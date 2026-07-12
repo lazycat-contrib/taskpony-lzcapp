@@ -1,5 +1,7 @@
 # Taskpony - LazyCat 应用
 
+每天定时检查 Taskpony 稳定版本，并支持 `v*` tag 和手动触发懒猫官方商店与喵喵私有商店发布。
+
 **一个小巧整洁的任务整理器**
 
 ---
@@ -8,8 +10,8 @@
 
 - **应用名称**: Taskpony
 - **包名**: `cloud.lazycat.app.taskpony`
-- **版本**: 1.0.0
-- **最低 LazyCat OS**: 1.3.8
+- **版本**: 0.2.0
+- **最低 LazyCat OS**: 1.5.0
 - **原始项目**: [digdilem/taskpony](https://github.com/digdilem/taskpony)
 
 ## 🚀 快速部署
@@ -46,7 +48,8 @@ lzc-cli appstore login
 
 | 文件 | 说明 |
 |------|------|
-| `lzc-manifest.yml` | 应用核心配置（含中英文） |
+| `package.yml` | LPK v2 应用元数据（含中英文） |
+| `lzc-manifest.yml` | 应用运行配置 |
 | `lzc-build.yml` | 构建配置 |
 | `build.sh` | 自动化脚本 |
 | `icon.png` | 应用图标（需用户提供） |

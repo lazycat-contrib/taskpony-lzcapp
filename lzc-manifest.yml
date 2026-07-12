@@ -1,15 +1,3 @@
-# Taskpony - A small and tidy task organiser
-# LazyCat Application Manifest (v1.4.1+ format)
-
-name: Taskpony
-package: cloud.lazycat.app.taskpony
-version: 0.2.0
-min_os_version: 1.3.8
-description: "A small and tidy task organiser"
-license: MIT
-homepage: https://github.com/digdilem/taskpony
-author: digdilem
-
 application:
   subdomain: taskpony
   upstreams:
@@ -24,7 +12,6 @@ services:
     image: registry.lazycat.cloud/czyt/digdilem/taskpony:c67578ec06e063d3
     binds:
       - /lzcapp/var/db:/opt/taskpony/db
-    restart: unless-stopped
     cpu_shares: 512
     mem_limit: 512M
     healthcheck:
@@ -35,11 +22,3 @@ services:
       timeout: 10s
       retries: 3
       start_period: 30s
-
-locales:
-  en:
-    name: "Taskpony"
-    description: "A small and tidy task organiser"
-  zh:
-    name: "Taskpony"
-    description: "一个小巧整洁的任务整理器"
