@@ -20,7 +20,7 @@ application:
 
 services:
   taskpony:
-    # digdilem/taskpony:latest
+    # digdilem/taskpony:0.2d
     image: registry.lazycat.cloud/czyt/digdilem/taskpony:c67578ec06e063d3
     binds:
       - /lzcapp/var/db:/opt/taskpony/db
